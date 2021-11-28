@@ -3,7 +3,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Classes from "./Components/Classes";
 import Contact from "./Components/Contact";
-import Navbar from "./Components/Navbar";
+import MainNav from "./Components/MainNav";
 import Shop from "./Components/Shop";
 
 import React from "react";
@@ -11,7 +11,7 @@ import React from "react";
 const App = () => {
   return (
     <>
-      <Navbar />
+      <MainNav />
       <main>
         <Routes>
           <Route exact path="/" element={<Home />} />
