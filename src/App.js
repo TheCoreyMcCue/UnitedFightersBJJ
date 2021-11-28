@@ -1,4 +1,3 @@
-// import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import About from "./Components/About";
@@ -11,18 +10,18 @@ import React from "react";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
-    <main>
-    <Routes>
-      <Route exact path="/" element={<Home />} />
-      <Route exact path="/about" element={<About />} />
-      <Route exact path="/classes" element={<Classes />} />
-      <Route exact path="/Shop" element={<Shop />} />
-      <Route exact path="/contact" element={<Contact />} />
-    </Routes>
-    </main>
-  </div>
+      <main>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/classes" element={<Classes />} />
+          <Route exact path="/shop" element={<Shop />} />
+          <Route exact path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+    </>
   );
 };
 
